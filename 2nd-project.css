@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background-color: darkgray; */
+    height: 50vh;
+}
+:root{
+    --orange:#ffc300;
+    --black:#262626;
+    --white:#ffff;
+    --blue:#0035c5;
+    --skyblue:#033dcf;
+    --lightgray:#eaeaea;
+    --lightorange:#fff4d2;
+    --lightgreen:#00ff11;
+    --red:#ff0000;
+    --lightred:#fff7f7;
+    --gray:#939393;
+    --lightgreen2:#f9fffb;
+}
+#header-navigation-container {
+    background-color: var(--white);
+    height: 4.5rem;
+    font-weight: 500;
+    margin-top: 1em;
+}
+/* starting-nav-header */
+.top-nav-header {
+    color: var(--blue);
+    display: flex;
+    margin-left: 35px;
+    font-size: 1.1rem;
+   border-bottom: 1px solid gray;
+   
+}
+.top-nav-header-2 {
+    position: absolute;
+    right: 0px;
+    margin-right: 5em;
+}
+a{
+    text-decoration: none;
+    margin-inline: 8px;
+}
+
+/* second nav bar */
+#main-nav-container {
+    margin-top: 10px;
+    margin-left: 6em;
+    display: flex;
+    justify-content: center;
+    margin-inline: 15px
+}
+#main-nav-container :nth-child(6) {
+    color: var(--orange);
+}
+.sub-nav-bar {
+    position: absolute;
+    left: 40px;
+}
+.premium {
+    color: var(--orange);
+    margin-left: 1.3em;
+}
+.onlline-banking {
+    border: 1px solid;
+    padding: 0.5em;
+    color: #ffffff;
+    background-color: var(--blue);
+    border-radius: 7px;
+    position: absolute;
+    right: 40px;
+    margin-right: 3em;
+}
+
+/* my first writeup area  below my nav container */
+#first-writeup-container {
+    background-color: hwb(33 11% 69%);
+    background-image: url(my-wallpaper.png);
+    background-size: cover;
+    height: 30vh;
+}
+main {
+    margin-left: 4rem;
+}
+.first-pargraph {
+    font-size: xx-large;
+    color: var(--orange);
+    font-weight: bolder;
+    padding: 1.3em 0em 1.1em 0em;
+}
+.second-paragraph {
+    color: var(--white);
+    width: 63ch;
+    font-weight: 400;
+    font-size: large;
+    /* width: clamp(3em, 16rem, 50%); */
+}
+
+/* main section 7 horizontal grrid boxes */
+#main-grid-container {
+    display: grid;
+    grid-template-columns: repeat(7,150px);
+    grid-auto-rows: 100px;
+    gap: 1.9em;
+    margin: 2em 0em 0em 3em;
+    background-color: var(--lightorange);
+}
+.grid-box{
+    background-color: var(--orange);
+    color: var(--blue);
+    font-weight: bolder;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.grid-box:nth-child(4) {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/* Tech Innovation section */
+#tech-section-container {
+    margin: 2em 2em 0em 3em;
+    height: 25vh;
+    background-color: rgb(182, 118, 22);
+    background-image: url(candle-wallpaper.png);
+}
+.tech-paragraph {
+    color: var(--orange);
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 1em 0em 0em 1.5em;
+}
+.tech-writeup {
+    color: var(--white);
+    font-size: larger;
+    padding-left: 1.9em;
+}
+.tech-button {
+    margin: 1.5em 0em 0em 1.9em;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-weight: bolder;
+    background-color: var(--white);
+    border-style: none;
+}
+
+/* latest-news-section */
+#latest-news-container {
+    margin: 2em 2em 0em 5em;
+}
+.news-paragraph {
+    color: var(--skyblue);
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.news-container-grid {
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    grid-auto-rows: 180px;
+    margin-top: 1em;
+    gap: 10px;
+}
+.news-grid {
+    background-color: var(--lightgray);
+    display: grid;
+    align-items: end;
+    padding: 1em 1em 1.3em 10px;
+}
+span { 
+    color: var(--blue);
+    font-weight: bolder;
+}
+
+/* latest on foreign exchange section */
+#foreign-exchange-container {
+    margin: 2em 2em 0em 5em;
+}
+.foreign-exchange-paragraph {
+    color: var(--skyblue);
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.foreign-exchange-grid {
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    grid-auto-rows: 180px;
+    margin-top: 1em;
+    gap: 10px;
+}
+.foreign-grid {
+    background-color: var(--lightgray);
+    display: grid;
+    align-items: end;
+    padding: 1em 1em 1.3em 10px;
+}
+span {
+    color: var(--blue);
+    font-weight: bolder;
+}
+
+/* lates from cbn section */
+#cbn-container {
+    margin: 2em 2em 0em 5em;
+}
+.cbn-paragraph {
+    color: var(--skyblue);
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.cbn-grid {
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    grid-auto-rows: 180px;
+    margin-top: 1em;
+    gap: 10px;
+}
+.cbn-grid-boxes {
+    background-color: var(--lightgray);
+    display: grid;
+    align-items: end;
+    padding: 1em 1em 1.3em 10px;
+}
+span {
+    color: var(--blue);
+    font-weight: bolder;
+}
+
+/* and now finally my foter section  */
+footer {
+    /* width: 80vw; */
+    height: 90vh;
+    background-color: var(--blue);
+    color: transparent;
+    margin-top: 3em;
+    box-sizing: border-box;
+}
+.foter-placeholders {
+    background-image: linear-gradient(#808080, #ffa500); 
+    height: 25vh;
+    padding: 3em 0em 0.5em 3em;
+    position: relative;
+}
+.foter-placeholders input {
+    width: 17em;
+    padding: 9px;
+    margin-bottom: 0.6em;
+    border-radius: 5px;
+    border-style: none;
+}
+.foter-placeholders button {
+    width: 17em;
+    padding: 9px;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--blue);
+    margin-bottom: 2.5em;
+    border-radius: 5px;
+    border-style: none;
+}
+.foter-placeholders p {
+    font-weight: bolder;
+    font-size: xx-large;
+    color: var(--white);
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 3rem;
+    margin-right: 7rem;
+}
+
+#bottom-section-container{
+    /* background-color: blue; */
+    font-size: larger;
+    color: var(--white);
+   
+}
+.columns-container{
+    display: inline-block;
+    margin-inline: 1.7em;
+    line-height: 1.6em;
+    margin-top: 1em;
+    margin-left: 5em;
+}
+.circle{
+    background-color: var(--white);
+    color: var(--blue);
+    height: 15vh;
+    width: 8vw;
+    border-radius: 150px;
+    /* text-align: center; */
+    font-size: medium;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.prem{
+    color: var(--orange);
+    margin-top: -3.5em;
+}
+.columns-header{
+    color: var(--orange);
+    font-size: x-large;
+}
+.the-end {
+    height: 5vh;
+    /* background-color: #00ff11; */
+    margin-top: 0.3em;
+    margin-left: 1.5em;
+    color: var(--skyblue);
+    font-size: larger;
+}
+.copyright {
+    float: right;
+    margin-right: 8em;
+    font-weight: 100;
+}
+
+
+
+/* this section is for arrangement of my icons in my 7 horizontal grid boxes */
+
+.fa-solid.fa-user.fa-2xl,
+.fa-sharp.fa-solid.fa-city.fa-2xl,
+.fa-solid.fa-hands-holding.fa-2xl,
+.fa-solid.fa-location-dot.fa-2xl,
+.fa-solid.fa-calculator.fa-2xl,
+.fa-sharp.fa-solid.fa-phone.fa-2xl,
+.fa-sharp.fa-solid.fa-chart-simple.fa-2xl
+
+{
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+
+
